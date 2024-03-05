@@ -20,11 +20,19 @@
 
 <script>
     function submitForm() {
-        var username = document.getElementById("username").value;
-        if (username.toLowerCase() === "ella") {
-            window.location.href = "https://6th.netlify.app/"; // Change this URL to the desired website
-        } else {
-            alert("Invalid name. Please try again..");
-        }
+    var username = document.getElementById("username").value;
+    if (username.toLowerCase() === "ella") {
+        window.location.href = "https://6th.netlify.app/";
+    } else if (username.toLowerCase() === "ella lee") {
+        window.location.href = "https://6th.netlify.app/";
+    } else if (username.toLowerCase() === "ella kristel lee") {
+        window.location.href = "https://6th.netlify.app/";
     }
+    else if (username.toLowerCase() === "ella kristel lee gaston") {
+        window.location.href = "https://6th.netlify.app/";
+    } else {
+        alert("Invalid name. Please try again..");
+    }
+}
+
 </script>
