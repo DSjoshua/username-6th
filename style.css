@@ -1,0 +1,62 @@
+body {
+    background-color: #e5d0d0; /* Set a background color */
+    background-image: url('background-image.jpg'); /* Set a background image */
+    background-repeat: repeat; /* Repeat the background image */
+    font-family: Arial, sans-serif; /* Optional: Set a font for better readability */
+}
+
+
+.input__container {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 auto; /* Center the container */
+    margin-top: 300px;
+}
+
+.input__container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(25px);
+    border-radius: 20px;
+    background-color: #e499ff;
+    background-image: radial-gradient(at 47% 69%, hsla(17,62%,65%,1) 0px, transparent 50%),
+    radial-gradient(at 9% 32%, hsla(222,75%,60%,1) 0px, transparent 50%);
+}
+
+.input__label {
+    display: block;
+    margin-left: 0.4em;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.input__button {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.6em;
+    padding-left: 0.9em;
+    border-radius: 20px;
+    background: #48d951;
+    transition: background 300ms, color 300ms;
+    cursor: pointer;
+}
+
+.input__button:hover, .input__button:focus {
+    background: rgb(0, 0, 0);
+    color: #fff;
+}
