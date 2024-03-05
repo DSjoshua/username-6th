@@ -8,8 +8,9 @@
 </head>
 <body>
     <div class="input__container">
-        <h1>LOGIN🙈🙉
-            </h1>
+        <h1>
+            <span id="emoji">🙉</span> LOGIN
+        </h1>
         <label class="input__label">Name</label>
         <input id="username" placeholder="Enter your Name" class="input" name="text" type="text">
         <button class="input__button" onclick="submitForm()">Submit</button>
@@ -32,6 +33,29 @@
     else if (username.toLowerCase() === "ella kristel lee gaston") {
         window.location.href = "https://6th.netlify.app/";
     } else {
+        alert("Invalid name. Please try again..");
+    }
+}
+
+// Function to toggle emoji based on typing
+document.getElementById("username").addEventListener("input", function() {
+    var emojiSpan = document.getElementById("emoji");
+    if (this.value === "") {
+        emojiSpan.innerText = "🙉";
+    } else {
+        emojiSpan.innerText = "🙈";
+    }
+});
+
+// Function to handle form submission
+function submitForm() {
+    var username = document.getElementById("username").value;
+    var emojiSpan = document.getElementById("emoji");
+    
+    if (username.toLowerCase() === "ella" || username.toLowerCase() === "ella lee" || username.toLowerCase() === "ella kristel lee" || username.toLowerCase() === "ella kristel lee gaston") {
+        window.location.href = "https://6th.netlify.app/";
+    } else {
+        emojiSpan.innerText = "🤣";
         alert("Invalid name. Please try again..");
     }
 }
