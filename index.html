@@ -22,7 +22,7 @@
 
 <script>
     function submitForm() {
-    var username = document.getElementById("username").value;
+    var username = document.getElementById("username").value.trim;
     if (username.toLowerCase() === "ella") {
         window.location.href = "https://6th.netlify.app/";
     } else if (username.toLowerCase() === "ella lee") {
