@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     gap: 6px;
     background: rgba(255, 255, 255, 0.3);
+    background: rgb(139, 139, 138);
     padding: 15px;
     border-radius: 20px;
     position: relative;
