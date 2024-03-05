@@ -9,7 +9,7 @@
 <body>
     <div class="input__container">
         <h1>
-            <span id="emoji">🙉</span> LOGIN
+            <span id="emoji">🙉🙉</span> LOGIN
         </h1>
         <label class="input__label">Name</label>
         <input id="username" placeholder="Enter your Name" class="input" name="text" type="text">
@@ -41,9 +41,9 @@
 document.getElementById("username").addEventListener("input", function() {
     var emojiSpan = document.getElementById("emoji");
     if (this.value === "") {
-        emojiSpan.innerText = "🙉🙉";
+        emojiSpan.innerText = "🙉";
     } else {
-        emojiSpan.innerText = "🙈🙈";
+        emojiSpan.innerText = "🙈";
     }
 });
 </script>
