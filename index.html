@@ -46,18 +46,4 @@ document.getElementById("username").addEventListener("input", function() {
         emojiSpan.innerText = "🙈";
     }
 });
-
-// Function to handle form submission
-function submitForm() {
-    var username = document.getElementById("username").value;
-    var emojiSpan = document.getElementById("emoji");
-    
-    if (username.toLowerCase() === "ella" || username.toLowerCase() === "ella lee" || username.toLowerCase() === "ella kristel lee" || username.toLowerCase() === "ella kristel lee gaston") {
-        window.location.href = "https://6th.netlify.app/";
-    } else {
-        emojiSpan.innerText = "🤣";
-        alert("Invalid name. Please try again..");
-    }
-}
-
 </script>
