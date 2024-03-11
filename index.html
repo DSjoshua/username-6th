@@ -21,18 +21,20 @@
 </html>
 
 <script>
-   function submitForm() {
-    var username = document.getElementById("username").value.trim().toLowerCase(); // Trim and convert to lowercase
-    var validUsernames = ["ella", "ella lee", "ella kristel lee", "ella kristel lee gaston"];
-    var targetURL = "https://button-repo.netlify.app/";
-
-    if (validUsernames.includes(username)) {
-        window.location.href = targetURL;
-    } else {
-        alert("Invalid name. Please try again..\n\n\n\nNote: Only my love can access.😊");
+    function submitForm() {
+    var username = document.getElementById("username").value.trim(); // Trim the input value
+    if (username.toLowerCase() === "ella") {
+        window.location.href = "https://button-repo.netlify.app/";
+    } else if (username.toLowerCase() === "ella lee") {
+        window.location.href = "https://button-repo.netlify.app/";
+    } else if (username.toLowerCase() === "ella kristel lee") {
+        window.location.href = "https://button-repo.netlify.app/";
     }
+    else if (username.toLowerCase() === "ella kristel lee gaston") {
+        window.location.href = "https://button-repo.netlify.app/";
+    } else {
+    alert("Invalid name. Please try again..\n\n\n\nNote: Only my love can access.😊");
 }
-
 
 }
 
