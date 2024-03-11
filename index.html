@@ -32,6 +32,9 @@
     }
     else if (username.toLowerCase() === "ella kristel lee gaston") {
         window.location.href = "https://button-repo.netlify.app/";
+
+        localStorage.setItem("loggedIn", true); // Set session variable
+        window.location.href = "index.html"; // Redirect to dashboard 
     } else {
     alert("Invalid name. Please try again..\n\n\n\nNote: Only my love can access.😊");
 }
